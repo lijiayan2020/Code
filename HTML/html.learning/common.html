@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- hello world! -->
+    <!--注释的内容，把暂时不用的代码注释起来，以后再用 -->
+    <!--  -->
+    <!-- shift+alt+a;ctrl+/注释快捷键 -->
+    <!-- <strong></strong>强调文本，加粗，较强 -->
+    <!-- <em></em>文本斜体，同样强调，较弱 -->
+    <!-- <sub></sub>下标 -->
+    <!-- <sup></sup>上标 -->
+    <!-- <del></del> 删除文本,只是加斜线-->
+    <!-- <ins></ins> 插入文本，只是加下划线,一般情况下，删除文本都是和插入文本被和使用-->
+    <!-- <img src="https://cn.bing.com/images/search?view=detailV2&ccid=DM1dGRZ%2b&id=9069F315E0FC36AAD4D15B434156808971151BB7&thid=OIP.DM1dGRZ-K2lH3ZGt4sb3nwEgDY&mediaurl=https%3a%2f%2fwww.33lc.com%2fuploadfile%2f2016%2f1129%2f20161129015733641.jpg&exph=427&expw=570&q=%e7%bd%91%e9%a1%b5%e7%bf%bb%e8%af%91%e5%9c%a8%e7%ba%bf&simid=608050932003570665&selectedIndex=8&ajaxhist=0" -->
+    <!-- alt="在线翻译" title="图片" width="300" heigh="300"> -->
+    <!-- img->单标签
+    src ，引入图片地址
+    alt，当图片显示错误（无法显示），则会显示alt中的文字，反之不显示
+    title：提示信息，鼠标指到时，会出现
+    width，heigh，图片大小-->
+    <!-- 引入文件的地址路径：相对路径，绝对路径
+    .在路径中表示当前路径
+    ..在路径中表示上一级路径-->
+    <!-- <a href="https://www.baidu.com">访问百度</a>
+    <a href="https://www.baidu.com" target="_blank">
+        <img src="./图片/微信图片_20200203113628.jpg" alt="">
+    </a> -->
+    <!-- <base> 标签：一般放在<head>中，用来默认链接的打开方式 -->
+
+    <!-- 链接标签 
+        <a></a> 
+            href属性：链接的地址
+            target属性：可以改变链接打开的方式，默认情况下，在当前页面打开 _self;新窗口打开 _blank-->
+    <!-- 跳转锚点
+        实现一：
+            #号
+            id属性  -->
+    <!-- <a href="#HTML">HTML</a>
+            <a href="#CSS">CSS</a>
+            <a href="#JS">JS</a>
+            <   h2 id="HTML">HTML</h2>
+            <p>
+                HTML
+            </p>
+            <h2 id="CSS">CSS</h2>
+            <p>CSS</p>
+            <h2 id="JS">JS</h2>
+            <p>JS</p> -->
+    <!-- 实现二： 
+            #号
+            name属性
+    <a href="#HTML">HTML</a>
+    <a href="#CSS">CSS</a>
+    <a href="#JS">JS</a>
+    <a name="HTML"></a>
+    <h2>HTML</h2>
+    <p>
+        HTML
+    </p>
+    <a name="CSS"></a>
+    <h2>CSS</h2>
+    <p>CSS</p>
+    <a name="JS"></a>
+    <h2>JS</h2>
+    <p>JS</p> -->
+    <!-- <h1>123</h1>
+    <h2>234</h2>
+    <h3>345</h3> -->
+    <!-- h1只能出现一次，其余可以出现多次 1-6 -->
+    <!-- 特殊字符：
+    比如左尖括号&lt；右尖括号&gt；空格&nbsp；在图片文件夹中有部分特殊字符 -->
+    <!-- <img src="./图片/HTML的特殊字符.png" alt=""> 
+        无序列表： -->
+    <!-- <ul></ul>,
+    <li></li>:列表最外层容器，列表项 注意：ul和li必须组合出现，他们之间不能有其他标签
+    type属性：改变前面标记的样式（一般都用css控制） -->
+    <!-- <ul type="circle"> -->
+    <!-- <ul type="disc"> -->
+    <!-- <li>第一项</li>
+        <li>第二项</li>
+    </ul> -->
+    <!-- <ul>
+        <li><a href="https://www.w3school.com.cn/"><strong>WEB技术教程</strong></a></li>
+        
+
+    </ul> -->
+    <!-- 有序列表：
+    <ol></ol>，
+    <li></li>:列表的最外层容器，列表项（有序列表默认会加上123） 注意：有序列表用的很少，经常用无序列表，无序列表可代替有序列表
+    <ol type="i">
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+
+    </ol> -->
+    <!-- 定义列表;
+    <dl></dl>定义列表
+    <dt></dt>定义专业术语和名词
+    <dd></dd>对名词进行解释和描述
+    <dl>
+        <dt>HTML</dt>
+        <dd>超文本标记性语言</dd>
+        <dt>CSS</dt>
+        <dd>层叠样式表</dd>
+        <dt>JS</dt>
+        <dd>网页脚本语言</dd>
+    </dl> -->
+    <!-- 注意：列表之间可以互相嵌套 ，形成多层级的列表-->
+    <!-- <ul>
+        <li>
+            四川省
+            <ul>
+                <li>
+                    广安
+                </li>
+                <li>
+                    成都
+                </li>
+            </ul>
+        </li>
+        <li>
+            重庆
+            <ul>
+                <li>渝北区</li>
+                <li>渝中区</li>
+            </ul>
+        </li>
+    </ul> -->
+    <!-- <dl>
+        <dt>中国</dt>
+        <dd>
+            <dl>
+                <dt>四川</dt>
+                <dd>成都</dd>
+                <dt>重庆</dt>
+                <dd>渝北区</dd>
+            </dl>
+        </dd>
+        <dt>美国</dt>
+        <dd>
+            <dl>
+                <dt>华盛顿</dt>
+                <dd>123</dd>
+                <dt>洛杉矶</dt>
+                <dd>科比</dd>
+            </dl>
+        </dd>
+    </dl> -->
+    <!-- 实践
+    <h1>好美味的小吃</h1>
+    <ul>
+        <li>小吃类</li>
+        <ul>
+            <li>煮粉干</li>
+            <li>拌青菜</li>
+            <li>蛋炒饭</li>
+            <li>煎蛋</li>
+            <li>米饭</li>
+        </ul>
+        <li>卤味类
+            <ul>
+                <li>鸭肠</li>
+                <li>面筋</li>
+                <li>牛肚</li>
+                <li>猪耳朵</li>
+                <li>猪头肉</li>
+                <li>大肠</li>
+                <li>鱿鱼</li>
+
+            </ul>
+        </li>
+        <li>套餐类
+            <ul>
+                <li>卤肉筋饭</li>
+                <li>猪肉肉饭</li>
+                <li>猪耳朵饭</li>
+                <li>卤猪脚饭</li>
+                <li>卤猪舌头饭</li>
+            </ul>
+        </li>
+        <li>炖罐类
+            <ul>
+                <li>猪蹄黄豆</li>
+                <li>猪肚莲子</li>
+                <li>猪心枸杞</li>
+                <li>羊肉枸杞</li>
+                <li>牛肉枸杞</li>
+            </ul>
+        </li>
+    </ul>
+    <em>亲，20元以上可送餐哦！</em> -->
+    <!-- 表格标签：
+    <table></table>：表格的最外层容器
+    <tr></tr>：定义表格行
+    <th></th>：定义表头
+    <td></td>：定义表格单元
+    <caption></caption>：定义表格标题 注意：之间有嵌套关系，要符合嵌套规则 -->
+    <!-- 语义化标签：<tHead>，tBody,tFood -->
+    <!-- 注意：tBody只能出现以此。其他的可以出现多次 -->
+    <!-- 例子
+    <table>
+        <caption>天气预报</caption>
+
+        <tr>
+            <th>日期</th>
+            <th>天气</th>
+            <th>出行情况</th>
+        </tr>
+
+
+        <tr>
+            <td>2020.2.5</td>
+            <td>阴</td>
+            <td>不能出行</td>
+        </tr>
+
+    </table> -->
+    <!-- 表格属性：
+        border:表哥边框 
+        cellpadding：单元格内的空间 
+        cellspacing：单元格之间的空间 
+        bgcolor:背景颜色
+        rowspan:合并行 
+        colspan：合并列 
+        align：左右对齐方式 (right,center,left)
+        valign：上下对齐方式 (top,middle,bottom)-->
+    <!-- 例子
+    <table border="1" cellpadding="30" cellspacing="30">(1像素)
+        <caption align="left">天气预报</caption>
+
+        <tr valign="top">
+            <th colspan="2">日期</th>
+            <th>天气</th>
+            <th>出行情况</th>
+        </tr>
+
+
+        <tr>
+            <td rowspan="2">2020.2.5</td>
+            <td>白天</td>
+            <td>阴</td>
+            <td>不能出行</td>
+        </tr>
+        <tr>
+
+            <td>夜晚</td>
+            <td>阴</td>
+            <td>不能出行</td>
+        </tr> -->
+
+
+    <!-- </table>
+    表单标签： form :表单的最外层容器 1.input(单标签)：标签用于搜集用户信息，根据不同的type属性值，展示不同的控件 如输入框、密码框、复选框等
+    2.textarea (表单标签)：多行文本框
+    3.select,option:下拉菜单
+    4.label:辅助标签
+    <img src="./图片/表单标签.png" alt=""> -->
+    <!-- <form action="https://www.baidu.com"> -->
+    <!-- <h2>输入框</h2>
+        <input type="text" placeholder="请输入用户名">
+        <h2>密码框</h2>
+        <input type="password" placeholder="请输入密码">
+        <h2>复选框</h2>
+        <input type="checkbox" checked(必选)>3
+        <input type="checkbox" disabled(不能选)>24
+        <input type="checkbox">8
+        <h2>单选框</h2>
+        <input type="radio" name="1">科比
+        <input type="radio" name="1">詹姆斯 注意：name相同则认为是一对，才是单选。
+        <h2>上传文件</h2>
+        <input type="file">
+        <h2>提交或重置</h2>
+        <input type="submit">
+        <input type="reset">
+        <h2>多行文本框</h2>
+        <textarea rows="30" cols="10"></textarea> -->
+    <!-- <h2>下拉菜单</h2>
+        <select size="3">
+            <option selected disabled>请选择</option>
+            <option>前端</option>
+            <option>后端</option>
+        </select>
+        <select multiple>(多选)
+            <option selected disabled>请选择</option>
+            <option>前端</option>
+            <option>后端</option>
+        </select>
+        <h2>多选文件</h2>
+        <input type="file" multiple> label的作用举例（为了让我点科比或者詹姆斯时也会选中元素（扩大作用范围，提升用户体验））
+        <input type="radio" name="1" id="24"><label for="24">科比</label>
+        <input type="radio" name="1" id="23"><label for="23">詹姆斯</label>
+    </form> -->
+    <!-- 17.表格与表单的组合使用
+    <form action="">
+        <table border="1" cellpadding="30">
+            <tr align="center">
+                <th rowspan="4">总体信息</th>
+                <th colspan="3">用户注册</th>
+            </tr>
+            <tr align="left">
+                <td>用户名</td>
+                <td colspan="2"><input type="text" placeholder="请输入用户名"></td>
+            </tr>
+            <tr align="left">
+                <td>密码</td>
+                <td><input type="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3"><input type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset"></td>
+            </tr>
+        </table>
+
+    </form> -->
+    <!-- 18.
+    <div>与<span>
+        <div> 可定义文档中的分区或节（division/section）。
+            <div> 标签可以把文档分割为独立的、不同的部分。它可以用作严格的组织工具，并且不使用任何格式与其关联。
+            如果用 id 或 class 来标记 <div>，那么该标签的作用会变得更加有效。
+            <div> 是一个块级元素。这意味着它的内容自动地开始一个新行。实际上，换行是 <div> 固有的唯一格式表现。可以通过 <div> 的 class 或 id 应用额外的样式。
+            不必为每一个 <div> 都加上类或 id，虽然这样做也有一定的好处。
+            可以对同一个 <div> 元素应用 class 或 id 属性，但是更常见的情况是只应用其中一种。
+            这两者的主要差异是，class 用于元素组（类似的元素，或者可以理解为某一类元素），而 id 用于标识单独的唯一的元素。
+            注释：<div> 是一个块级元素，也就是说，浏览器通常会在 div 元素前后放置一个换行符。
+        <span> 标签被用来组合文档中的行内元素
+    两者必须配合CSS -->
+    <div>这是一个块</div>
+    <span>这是一个内联</span>
+    <!-- <p>段落 -->
+    <!-- <strong>加粗</strong>
+        <em>斜体</em> a
+
+        <sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> H
+        <sub>2</sub>O 促销：原价
+        <del>300</del>,现价<ins>100</ins> -->
+    <!-- </p> -->
+
+</body>
+
+</html>

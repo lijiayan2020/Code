@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 1440px;
+            height: 800px;
+            background-color: black;
+            background-image: url(./1.jpg);
+            background-attachment: fixed;
+        }
+        
+        #div2 {
+            width: 1440px;
+            height: 800px;
+            background-image: url(./2.jpg);
+            background-attachment: fixed;
+        }
+        
+        #div3 {
+            width: 1440px;
+            height: 800px;
+            background-image: url(./3.jpg);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+ * @Description: 实现视觉冲击
+ * @version: 
+ * @Author: LiJiayan
+ * @Date: 2020-02-08 15:44:27
+ * @LastEditors  : LiJiayan
+ * @LastEditTime : 2020-02-08 15:44:34
+-->
+    <div id="div1">
+        <table border="1" cellpadding="30" cellspacing="30">(1像素)
+            <caption>天气预报</caption>
+
+            <tr>
+                <th colspan="2">日期</th>
+                <th>天气</th>
+                <th>出行情况</th>
+            </tr>
+
+
+            <tr>
+                <td rowspan="2">2020.2.5</td>
+                <td>白天</td>
+                <td>阴</td>
+                <td>不能出行</td>
+            </tr>
+            <tr>
+
+                <td>夜晚</td>
+                <td>阴</td>
+                <td>不能出行</td>
+            </tr>
+
+
+        </table>
+    </div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+
+</html>

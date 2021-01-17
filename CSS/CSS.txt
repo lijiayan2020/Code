@@ -1,0 +1,115 @@
+1.CSS基础语法:
+    格式：
+        选择器{属性1：值1；属性2：值2；属性3：值3}
+    单位：
+        px ->像素(pixel)、% ->百分比
+        例子：
+            外容器：600px 当前容器 50% 就是300px
+    基本样式：
+        width、height、background_color
+    注释：
+        /*css注释的内容*/
+2.内联样式与内部样式(css样式的引入方式)
+    内联(行内、行间)样式:(style属性)
+        在html标签上添加style属性来实现
+    内部样式：(style标签)
+        在<style>标签内添加的样式
+        注意：内部样式的优点：可以复用代码，符合w3c的规范尽量让结构和样式分开处理
+3.外部样式(css样式的引入方式)
+    引入单独的css文件，name.css
+    <link>标签：
+        rel( 规定当前文档与链接文档之间的关系)
+        href(引入的资源的地址)
+    @import
+    不建议使用
+4.css中的颜色表示法
+    单词表示 yellow
+    十六进制表示 #000000-#ffffff
+    RGB三原色表示 (red,green,blue)(255,255,255);
+    取值范围0~255
+5.css背景样式
+    background-color：背景颜色
+    background-image：背景图片
+        url(图片地址)
+        默认会水平垂直铺满背景图
+    background-repeat：背景图片的平铺方式
+        repeat-x：x轴平铺
+        repeat-y
+        repeat:x,y都进行平铺
+        no-repeat:都不平铺
+    background-position：背景图片的位置
+       1. x y  (number)
+        (空格隔开，像素.%等为单位，左上角为原点，上与左为负值)
+        2.x y (单词)
+            x:left center,right
+            y:top center,bottom
+    background-attachment；背景图随滚动跳的移动方式
+        scroll默认值(背景位置是按照当前元素进行偏移)
+        fixed(按照浏览器进行偏移)
+6.背景实现视觉冲击效果
+7.css边框样式
+    border-style:边框的样式
+        solid:实线
+        dashed:虚线
+        dotted:点线
+    border-width:边框的大小(px...)
+    border-color:边框颜色
+    注意：能够针对某一边进行单独设置
+            border-left-style:中间为left、right、top、bottom
+    练习1，利用边框实现三角形
+    颜色;透明颜色transparent
+8.css文字样式
+    1.font-family:字体类型
+        英文字体：Arial，'Times New Roman'
+        中文字体：微软雅黑，宋体
+        中文字体的英文名称
+            微软雅黑：'Microsoft YaHei'
+            宋体：SimSun
+    2.衬线体与非衬线体
+        注意：
+        1.设置多字体的方式
+        2.引号的问题
+        例如'Microsoft YaHei'，之所以加引号，是因为里面有空格
+    3.font-size：字体大小
+        默认大小（16px）字体大小一般为偶数（为了实现文字对齐）
+        写法（xx-small,x-small,small,medium,large,x-large,xx-large不推荐）
+    4.font-weight:字体粗细
+        两种显示模式（正常，加粗）
+        写法:数值(100,200...900) normal,bold 100-500为正常值600以上为加粗
+    5.font-style:字体样式
+        两种模式  
+        正常（normal）
+        斜体（italic）oblique也表示斜体，用的少
+        原因：1.italic带有倾斜属性的字体的才可以设置倾斜操作
+              2.oblique没有倾斜属性的字体的也可以设置倾斜操作
+    6.color字体颜色
+9.css段落样式
+    text-decoration: 文本装饰(下划线(underline)，删除线(line-through)，上划线(overline),不添加(none)等)
+        取值
+        添加多个(空格隔开)
+    text-transform:文本大小写uppercase lowercase capitalize(每个单词的首字母大写)
+        取值
+    text-indent:文本缩进
+        首行缩进
+        em单位(相对单位，1em永远和字体大小相同)
+    text-align:文本对齐方式
+        取值 right left center justify(两端点对齐)
+    line-height:定义行高(定义，默认，取值)
+        line-height:30px;line-height:2(字体大小的2倍)
+    letter-spacing:定义字间距
+        h1{letter-spacing:3px}
+        h1{letter-spacing:-3px}
+    word-spacing:定义词间距(针对英文)
+        强行折行：(针对英文)
+            1.wor-break：break-all(非常强烈)
+            2.word-wrap:break-word(不是很强烈,会产生一些空白区域)
+10.css复合样式
+    一个css属性只控制一个样式，叫做单一样式
+    控制多种样式，复合样式
+    复合样式：(以空格的形式，多个样式分割)
+            background
+            border
+            font
+            有些不需要关心复合写法的顺序 如background,border，但是有些需要，如font
+            font (size family)
+            注意：至少需要两个值

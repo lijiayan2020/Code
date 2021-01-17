@@ -1,0 +1,35 @@
+# 1 "d:\\Code\\C++\\test\\.vscode\\tasks.json"
+# 1 "C:\\MinGW\\bin//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "d:\\Code\\C++\\test\\.vscode\\tasks.json"
+{
+
+
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "type": "shell",
+            "label": "cpp.exe build active file",
+            "command": "D:\\Program Files\\Dev-Cpp\\MinGW64\\bin\\cpp.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\Program Files\\Dev-Cpp\\MinGW64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
