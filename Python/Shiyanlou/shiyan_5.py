@@ -1,5 +1,6 @@
+
 class Solow:
-    r"""
+    """
     Implements the Solow growth model with the update rule
 
         k_{t+1} = [(s z k^α_t) + (1 - δ)k_t] /(1 + n)
