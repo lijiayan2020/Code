@@ -2,5 +2,8 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "cSpell.ignoreWords": [
+        "numpy"
+    ]
 }
