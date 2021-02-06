@@ -20,3 +20,27 @@ print(my_2d_array)
 my_array = np.array([[4, 5], [6, 1]])
 print(my_array)
 print(my_array.shape)
+
+my_array_column_1 = my_array[:, 1]
+print(my_array_column_1)
+my_newidea = my_array[0] #第一行
+print(my_newidea)
+
+
+
+
+#Numpy中的数组操作
+a = np.array([[1.0, 2.0],[3.0, 4.0]])
+b = np.array([[5.0, 6.0],[7.0, 8.0]])
+sum = a + b
+difference = a - b
+product = a * b
+quotient = a / b 
+print("Sum = \n", sum)
+print("Difference = \n", difference)
+print("Product = \n", product)
+print("Quotient = \n", quotient)
+
+#矩阵乘法
+matrix_prodact = a.dot(b)
+print("Matrix Product = \n", matrix_prodact)
