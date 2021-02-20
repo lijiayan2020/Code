@@ -23,3 +23,12 @@
 　　71
 　　4435274
 '''
+n = int(input())
+array = [i for i in range(n)]
+
+for i in range(n):
+    a = int(input(),16)
+    array[i] = format(a, 'o')# 如果你不想输出0b , 0o 或者0x 的前缀的话，可以使用format() 函数
+    
+for i in array:
+    print(i)
