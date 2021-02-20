@@ -53,6 +53,9 @@ while True:
         f1, f2 = 1, 1
         for i in range(3, n+1):
             f1, f2 = f2 % 10007, (f1 + f2) % 10007
+            #取余运算规则=模运算
+            #模运算与基本四则运算有些相似，但是除法例外。
+            #(a + b) % p = (a % p + b % p) % p 
         print(f2)
     except:
         break
