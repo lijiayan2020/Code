@@ -12,3 +12,5 @@
 样例输出
 1E
 '''
+a = int(input())
+print(format(a, 'X'))#大 "X"为大写，小x为小写
