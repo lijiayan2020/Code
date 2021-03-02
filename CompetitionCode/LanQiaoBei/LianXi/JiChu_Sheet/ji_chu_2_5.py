@@ -1,4 +1,4 @@
-#2.5 特殊回文数
+#2.5 特殊回文数(难点：如何判断是否为回文数)
 '''
 问题描述
 　　123321是一个非常特殊的数，它从左边读和从右边读是一样的。
@@ -31,7 +31,7 @@ int a(int n)//求出5位数和6位数中的回文数函数
 		len=0;
 		while(temp!=0)
 		{
-			sum=sum*10+temp%10;
+			sum=sum*10+temp%10; #得到的sum就是i的倒过来的数 
 			temp=temp/10;
 			len++;//累计位数以此判断是5位数还是6位数 
 		}
@@ -68,3 +68,30 @@ int main()
 }
 ''' 
 
+#我做一遍 python
+import time
+start = time.time()
+def huiwen(n):
+    for i in range(10000,1000000):
+        
+        temp = i
+        num = 0
+        len = 0
+        while temp!=0:
+            
+            num = num*10 + temp%10
+            temp = int(temp/10)
+            len += 1
+        if num==i:
+            sum1 = int(num/100)%10 + int(num/10)%10 
+            sum2 = num%10
+            if len==5:
+                if sum1*2+sum2 == n:
+                    print(i)
+            if len==6:
+                if sum1*2+sum2*2 == n:
+                    print(i)
+n = int(input())
+huiwen(n)
+end = time.time()
+print(end - start)                   

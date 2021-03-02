@@ -31,3 +31,38 @@
 数据规模与约定
 1 <= n <= 34。
 '''
+#思路：第几行就有几个数字；能用递归
+# 现在不知道自己哪里错了，只能理解别人好的代码
+'''
+def yanghui_sanjiao(n):
+
+        arr = [1 for i in range(n)]
+        
+    
+        for i in range(n-2):
+            arr2 = yanghui_sanjiao(n-1)
+            arr[i+1] = arr2[i] + arr2[i+1]
+        # print(arr)
+        for i in arr:
+            print(i, end=' ')
+        print()
+        return arr
+
+
+n = int(input())
+yanghui_sanjiao(n)
+'''
+n = int(input())
+yanghui_san = []
+for i in range(n):
+    yanghui_san.append([1 for j in range(i+1)])
+    
+
+for i in range(1, n):
+    for j in range(1, i):#第i+1行，有i+1个数，倒数第二个数的序号是i-1,所以右边是i
+        yanghui_san[i][j] = yanghui_san[i-1][j-1] + yanghui_san[i-1][j]
+        
+for i in range(n):
+    for j in range(i+1):
+        print(yanghui_san[i][j], end=' ')
+    print()
