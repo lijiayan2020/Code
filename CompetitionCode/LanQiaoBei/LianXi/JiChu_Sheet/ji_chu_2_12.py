@@ -26,3 +26,17 @@
 00011
 <以下部分省略>
 '''
+#my
+# for i in range(0, 32):
+    
+    
+#     i = "{:b}".format(i)
+    
+    
+#     print(i.rjust(5,'0'))
+# # 题解
+# # Python就是两行解决问题。。。
+# for i in range(32):
+#     print("{0:0>5}".format(format(i, 'b')))
+for i in range(32):
+    print("{0:0>5}".format(format(i, 'b')))
