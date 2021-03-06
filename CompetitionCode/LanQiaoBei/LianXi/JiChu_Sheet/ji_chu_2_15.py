@@ -18,6 +18,40 @@
 样例输入
 20100122201001221234567890
 2010012220100122
+
 样例输出
 20100122203011233454668012
 '''
+n1 = input()
+n2 = input()
+
+
+wide = max(len(n1), len(n2))
+C = [0 for i in range(wide+1)]
+# print(wide)
+n1 = "0"*(wide-len(n1)) + n1#在前面添加0，让两个数保持一致
+n2 = "0"*(wide-len(n2)) + n2
+# print(n1)
+# print(n2)
+
+n1 = n1[::-1]#翻转
+n2 = n2[::-1]
+
+r = 0#进位数
+wei = 0#结果的位数
+
+temp = 0#当前相加的结果
+for i in range(wide):
+    temp = int(n1[i]) + int(n2[i]) + r
+    if temp > 9:
+        wei += 1
+    r = int(temp/10)#进位
+    C[i] = temp%10
+if wei >= wide:#如果结果的位数大于两个数的位数
+    C[wei] = r
+else:
+    C.pop()
+C = C[::-1]
+
+for i in C:
+    print(i, end='')
