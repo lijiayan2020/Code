@@ -36,7 +36,7 @@ R
 T
 4
 '''
-TODO:why
+#TODO: why
 v1, v2, m, t, l = map(int, input().split())
 t1 = 0 #兔的时间
 t2 = l//v2 # 龟的时间
@@ -45,7 +45,7 @@ count = 0#兔子的路程
 while count != l:
     t1 += 1
     if v1*(t1-n*t)-v2*t1 >= m:
-        m = v2*t
+        
         n += 1
         t1 += t
     count = v1*(t1-n*t)

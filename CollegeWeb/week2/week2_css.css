@@ -1,0 +1,28 @@
+body{
+	width: 80%;
+	height: 38px;
+	margin: 0 auto;
+	background-color: lightblue;
+	
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1, h2, h3,img{
+	text-align: center;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}

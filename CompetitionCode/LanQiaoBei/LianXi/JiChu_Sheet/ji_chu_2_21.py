@@ -44,6 +44,7 @@ for i in range(n):
         print(i+1, end=" ")
 # 题解(为什么运行不出来！！！)
 #利用好芯片比坏芯片多
+'''
 n = int(input())      
 matrix = [[] for _ in range(n)]
 right = [True for _ in range(n)]
@@ -55,11 +56,12 @@ for i in range(n):
 for i in range(n):
     count = 0
     for j in range(n):
-        if matrix[j][i] == 1: TODO:#为什么[i][j]就是错的？？
+        if matrix[j][i] == 1: #TODO:#为什么[i][j]就是错的？？
             count += 1
     if count <= n/2:
         right[i] = False
 for i in range(n):
     if right[i]:
         print(i+1, end=" ")
+'''
 
