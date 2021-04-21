@@ -1,0 +1,44 @@
+body{
+	width: 80%;
+	height: 700px
+}
+h2{
+	text-align: center;
+}
+input{
+
+}
+input[type="color"]{
+
+}
+#ipt1{
+	width: 400px;
+}
+.newstyle{
+	width: 300px;
+	height: 300px;
+	border: 10px solid orange;
+	background-color: #eee;
+	border-left-color: purple;
+}
+a{
+	display: block;
+	margin-top: 10px;
+	font-size: 50px;
+	color: green;
+	text-decoration: none;
+}
+a:link{
+	color: black;
+
+}
+a:hover{
+	color: lightgray;
+}
+a:active{
+	color: lightblue;
+}
+
+a:visited{
+	color: grey;
+}

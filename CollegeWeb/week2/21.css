@@ -1,0 +1,26 @@
+body{
+	width: 90%;
+	height:700px;
+	border: 1px dotted gray;
+	margin: 10px auto;
+}
+div{
+	width: 340px;
+	height: 350px;
+
+}
+.bgc1{
+	background-color: gray;
+}
+.bgc2{
+	background-color: purple;
+}
+.bgc3{
+	background-color: orange;
+}
+.wd1{
+	width: 210px;
+}
+.wd2{
+	width: 630px;
+}

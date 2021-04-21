@@ -1,0 +1,90 @@
+body{
+	width: 80%;
+	height: 700px;
+	margin: 0 auto;
+}
+h2{
+	text-align: center;
+}
+form{
+	position: relative;/*对Input做参照*/
+	height: 600px;
+	border: 1px solid green;
+}
+input{
+	position: absolute;/*绝对定位，相对父对象，若父对象没定位，则相对浏览器，absolute也是浮动*/
+	/*绝对定位可以覆盖*/
+	font-size: 24px;
+}
+input[class="radio"]{
+	width: 22px;
+	height: 22px;
+}
+checkbox{
+	width: 22px;
+	height: 22px;
+}
+/*#ipt1{
+	left: 10%;
+	top: 50px;
+}
+#ipt2{
+	left: 60%;
+	top: 50px;
+}*/
+.row1{
+	top: 50px;
+
+}
+.row2{
+	top: 150px;
+	
+}
+.row3{
+	top: 250px;
+	
+}
+.row4{
+	top: 350px;
+	
+}
+.row5{
+	top: 450px;
+	
+}
+.row6{
+	top: 550px;
+	
+}
+.col1{
+	left: 20%;
+}
+.col2{
+	left: 65%;
+}
+.col3{
+	left: 10%;
+}
+.col4{
+	left: 55%;
+}
+.col5{
+	left: 85%;
+}
+label{
+	position: absolute;
+	font-size: 20px;
+	color: purple;
+}
+#ipt9{
+	left: 35%;
+}
+#ip11{
+	left: 85%;
+}
+#lb11{
+	left: 75%;
+}
+#ipt12{
+	left: 48%;
+}

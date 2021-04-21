@@ -1,0 +1,167 @@
+body {
+    width: 90%;
+    height: 700px;
+    background-image: linear-gradient(90deg, #FFFEFF 0%, #D7FFFE 100%);
+    margin: 10px;
+    cursor: url(../Images/shu_biao/arr43.png), auto;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat no-repeat;*/
+}
+
+h2 {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    height: 35%;
+}
+
+.row1 {
+    height: 25%;
+}
+
+
+/*.row2 {*/
+
+
+/*height: 35%;*/
+
+
+/*}*/
+
+.my_information {
+    /*    position: fixed;
+    top: 30px;
+    left: 30px;*/
+    background-color: whitesmoke;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.love {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    font-size: 45px;
+    background-color: whitesmoke;
+}
+
+.p {
+    font-size: 60px;
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    font: normal normal 12px/1.6em "微软雅黑";
+    color: #000;
+}
+
+.information_fs {
+    font-size: 25px;
+}
+
+.mulu_fs {
+    font-size: 25px;
+    position: fixed;
+}
+
+.line2 {
+    /*text-align: left;*/
+    display: inline-block;
+    width: 70%;
+    height: 50%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.line3 {
+    display: inline-block;
+    width: 70%;
+    height: 50%;
+    float: left;
+    margin-top: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*text-align: center-left;*/
+}
+
+.line4 {
+    display: inline-block;
+    width: 70%;
+    height: 50%;
+    float: center;
+    margin-top: 1200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.dingw {
+    display: inline-block;
+    /*border: 1px solid bluegray;*/
+    /*width: 20%;*/
+    height: 100%
+}
+
+.lijinze {
+    display: inline-block;
+    padding: 50px;
+    float: center;
+}
+
+.zuihou {
+    float: center-right;
+}
+
+.dongm {
+    display: inline-block;
+    /*text-align: left;*/
+    /*width: 50%;*/
+    /*  三个框（四框使用 25%，两框使用 50%，以此类推） */
+    padding: 100px;
+    /*margin-top: 50px;*/
+    /* 如果需要在图片间增加间距 */
+    float: center;
+}
+
+.p1 {
+    text-align: center;
+    font-family: "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    border: 1px solid steelblue;
+    margin-bottom: 100px;
+    /*float: right;*/
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    /* footer的高度一定要是固定值*/
+    position: bottom;
+    bottom: 0px;
+    left: 0px;
+    background: #333;
+}
+
+.bg_last {
+    /*background-color: whitesmoke;*/
+}

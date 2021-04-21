@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>百变input2和js初步2</title>
+	<link rel="stylesheet" href="1.css">
+	<script>
+		// window.alert("I am js,运行ing")
+	</script>
+</head>
+<body>
+	<h2>百变Input2</h2>
+		<script>
+		// window.alert("I am js2,运行ing")
+	</script>
+	<form action="">
+		<input type="password" id="ipt1" maxlength="8">
+		<input type="email" id="ipt2">
+		<input type="url" id="ipt3">
+		<script>
+			function myfunc(arguments){
+				// window.alert("I am js3,运行ing");
+				document.getElementsById(“ipt1”).style.backgroundColor="#f00"
+			}
+		</script>
+		<input type="search" id="ipt4">
+		<input type="color" id="ipt5" value="#cccccc">
+		<input type="range" id="ipt6" min="0" maxlength="100" value="20">
+		<input type="button" id="ipt7" value="按钮" onclick="myfunc();">
+		<input type="submit" id="ipt8">
+	</form>
+	<script>
+		// window.alert("I am js4,运行ing")
+		// alert("I can also do it.")
+
+		var a = 1;
+		var b = 2;
+
+		// alert(a + b);
+		// alert("13" - b);
+// 
+		// console.log(13 - b)// 后台看，不影响用户
+		// if (confirm("Are you sure?") == true){
+		// 	alert("I don't need you any more.");
+		// }
+		// else{
+		// 	alert("I need you.");
+		// }
+
+		// if (window.prompt("Enter password:", "000") == 407){
+		// 	alert("Right!");
+		// }
+		// else{
+		// 	alert("Error!");
+		// }
+
+
+		document.getElementById("ipt1").style.backgroundColor = "red";
+		var arr = document.getElementsByTagName("h2");
+		arr[0].style.backgroundColor = "#0f0";
+		arr[0].textContent = "I am L";
+		var ele = document.getElementsByClassName("input")
+		var el = document.querySelector("input");
+		ele.style.backgroundColor = "yellow";
+
+	</script>
+javascript
+
+</body>
+</html>
+<script>
+	// window.alert("I am js5,运行ing")
+	
+
+</script>

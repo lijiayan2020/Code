@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>判断一个数是整数还是小数</title>
+	<script>
+		var n = 3.14;
+		if(parseInt(n.toString()) == parseFloat(n.toString()))
+		{
+			document.write(n + "是整数")
+		}
+		else
+		{
+			document.write(n + "是小数")
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>找出水仙花数</title>
+	<script>
+		//定义一个空字符串,用来保存水仙花数
+		var str = "";
+		for(var i=100; i<1000; i++)
+		{
+			var a = i % 10;//个位
+			var b = i/10 % 10; //十位
+			b = parseInt(b);//取整
+			var c = i / 100; //提取百位
+			c = parseInt(c);//取整
+			if(i == (a*a*a + b*b*b + c*c*c))
+			{
+				str = str + i + "、";
+			}
+			
+		}
+		document.write("水仙花数有：" + str);
+	</script>
+</head>
+<body>
+	
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2．使用循环语句输出下面的菱形图案（由“-”和“*”这两种符号组成）。</title>
+	<script>
+		for(var i=0;i<4;i++)
+		{
+			for(var k=0;k<3-i;k++)
+			{
+				document.write("-");
+			}
+			for(var k=0;k<(2*i+1);k++)
+			{
+				document.write("*");
+			}
+			document.write("<br>");//换行
+
+		}
+
+		for(i=0; i<3; i++)
+		{
+			for(k=0;k<i+1;k++)
+			{
+				document.write("-");
+			}
+			for(k=0;k<5-2*i;k++)
+			{
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

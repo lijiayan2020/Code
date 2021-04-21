@@ -1,0 +1,39 @@
+body{
+	width: 1000px;
+	height: 700px;
+	margin: 0 auto;
+}
+h2{
+	text-align: center;
+	color: orange;
+}
+.wall{
+	position: relative;
+	height: 100%;
+	border: 1px solid green;
+	background: lightgray;
+	background: url(../Images/haizeiwang.jpg) no-repeat;
+	background: url(../Images/haizeiwang.jpg) 100%/100%;
+	background: url(../Images/wallpaper1.jpg) repeat-x;
+	overflow: hidden;
+}
+.picall{
+	position: absolute;
+/*	top: 250px;
+	left: 450px;*/
+	background: lightblue;
+	padding: 10px 10px 15px 10px;
+	/*transform: rotate(-15deg);*/
+
+	transition: all 0.5s ease-in;/*(ease-out.ease-inout)*/
+	z-index: 1;
+}
+.picall:hover{/*伪类*/
+	transform: rotate(0deg) scale(1.2);
+	z-index: 2;
+}
+.pic1{
+	top: 0px;
+	left: 200px;
+}
+/*8-15*/

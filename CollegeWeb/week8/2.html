@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="2.css">
+	<title>走马灯与阴影技术</title>
+</head>
+<body>
+	<h2>走马灯与阴影技术</h2>
+	<!-- marquee -->
+	<!-- behavior:alternate,scroll,slide -->
+	<!-- direction:left right up,down -->
+	<!-- 两个方法 :start() stop()-->
+	<marquee behavior="alternate" direction="right" onmouseover="this.stop();" onmouseout="this.start();">
+		
+		
+			<p>	我是p标签，我可以移动，不行我走着你瞧</p>
+	</marquee>
+	<marquee id="m2" behavior="alternate" direction="up">
+		
+		
+			<p>	我是p标签，我可以移动，不行我走着你瞧</p>
+	</marquee>
+	<marquee id="m3"behavior="alternate" direction="down">
+
+			<p>	我是p标签，我可以移动，不行我走着你瞧</p>
+	</marquee>
+	<hr>
+	<hr>	<hr>
+	<div id="div1">	
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+	</div> 
+	<hr>
+	<hr>	
+	<hr>	
+	<div id="div2">	
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+		<a href="">我是内容</a>
+	</div>	
+</body>
+</html>

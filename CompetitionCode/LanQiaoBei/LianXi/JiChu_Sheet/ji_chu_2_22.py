@@ -18,7 +18,7 @@
 样例输出
 ABACABA
 '''
-#my#TODO:
+#my
 n = int(input())
 arr = ""
 for i in range(n):

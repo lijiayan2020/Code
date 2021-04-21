@@ -1,0 +1,35 @@
+body{
+	width: 90%;
+	height: 700px;
+	border: 1px solid gray;
+	margin: 20px auto;
+}
+.container{
+	border: 1px dotted blue;
+	height: 100%;
+	/*border-bottom: none;*/
+}
+.row{
+	height: 50%;
+
+}
+.bgc1{
+	background-color: gray
+}
+.bgc2{
+	background-color: purple;
+}
+.bgc3{
+	background-color: orange;
+
+}
+.subdiv{
+	display: inline-block;
+	width: 33%;
+	height: 100%;
+}
+#mydiv{
+	position: relative;
+	top: -10px;
+	width: 66%;
+}

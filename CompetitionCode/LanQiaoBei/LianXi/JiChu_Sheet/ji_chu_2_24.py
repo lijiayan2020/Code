@@ -25,7 +25,7 @@ num = {0:"ling", 1:"yi", 2:"er", 3:"san", 4:"si", 5:"wu",
     6:"liu", 7:"qi",8:"ba", 9:"jiu", 10:"shi"}
 arr = input()
 arr = str(int(arr))
-#TODO:将字符串分解成亿，万，千分别读，判断这其中有几个0
+#将字符串分解成亿，万，千分别读
 length = len(arr)#位数
 arr1 = arr[-4::]#提取后四位
 arr2 = arr[-8:-4:1]#从千万到万

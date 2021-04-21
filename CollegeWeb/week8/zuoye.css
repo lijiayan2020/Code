@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: black;
+	text-decoration: none;
+	/*去掉修饰*/
+	/*对所有适用*/
+}
+body{
+	width: 80%;
+	height: 700px;
+	margin: 0 auto;
+
+}
+h2{
+	text-align: center;
+	margin-top: 60px;
+}
+
+.outer{
+	width: 596px;
+	height: 250px;
+	border: 1px solid #707070;
+	margin: 25px auto;
+
+}
+.header{
+	height: 50px;
+	background-color: #eee;
+}
+.title{
+	display: inline-block;
+	width: 115.6px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: center;
+}
+.title:hover{
+	font-weight: bold;
+	background-color: #fff;
+	border-left: 1px solid #707070;
+	border-right: 1px solid #707070;
+}
+
+/*#a1{
+	background-color: #fff;
+	font-weight: bold;
+}*/
+
+.doc{
+	position: relative;
+}
+
+.docFrame{
+	position: absolute;
+	left: 20px;
+	top:20px;
+	/*display: none;*/
+
+}
+.docWord{
+	font-size: 16px;
+	display: inline-block;
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*a{
+	display: block;
+	margin-top: 30px;
+	width: 200px;
+	height: 50px;
+	border:1px solid green;
+	font-size: 22px;
+	color: blue;
+	text-align: center;
+	/*padding-top: 45px;*/
+/*	line-height: 50px;
+	vertical-align: middle;
+	position: relative;
+	left: 30%;
+	/*border-radius: 20px;*/
+	/*border-radius: 50% 50%;/*椭圆*/*/
+	/*background-color: grey;*/
+/*}
+a:hover{
+	background-color: purple;
+}
+a:active{
+	background-color: red;
+}*/*/*/

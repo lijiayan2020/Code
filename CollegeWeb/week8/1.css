@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: black;
+	text-decoration: none;
+	/*去掉修饰*/
+	/*对所有适用*/
+}
+body{
+	width: 80%;
+	height: 700px;
+	margin: 0 auto;
+
+}
+h2{
+	text-align: center;
+}
+a{
+	display: block;
+	margin-top: 30px;
+	width: 200px;
+	height: 50px;
+	border:1px solid green;
+	font-size: 22px;
+	color: blue;
+	text-align: center;
+	/*padding-top: 45px;*/
+	line-height: 50px;
+	vertical-align: middle;
+	position: relative;
+	left: 30%;
+	/*border-radius: 20px;*/
+	border-radius: 50% 50%;/*椭圆*/
+	background-color: grey;
+}
+a:hover{
+	background-color: purple;
+}
+a:active{
+	background-color: red;
+}

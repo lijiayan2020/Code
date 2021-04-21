@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>获取某一个字符</title>
+	<script>
+		var str = "Pretty girl";
+		result = ""
+		document.write("第一个字符是" + str.charAt(0) + "<br/>");
+		for(var i=0; i<str.length;i++)
+		{
+			if(str.charAt(i)<"s")
+			{
+				result = result + str.charAt(i)+ ",";
+			}
+          
+		}
+		document.write(result);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

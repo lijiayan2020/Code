@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>百变input</title>
+	<link rel="stylesheet" href="2.css">
+</head>
+<body>
+	<h2>百变input</h2>
+	<form action=""><!--表单，块元素-->
+		<!-- input#ipt$.row1.col1*12 -->
+		<input type="text" id="ipt1" class="row1 col1">
+		<input type="text" id="ipt2" class="row1 col2" maxlength="18">
+		<input type="number" id="ipt3" class="row2 col1" min="0" max="124">
+		<input type="date" id="ipt4" class="row2 col2">
+		<input type="time" id="ipt5" class="row3 col1">
+		<input type="datetime-local" id="ipt6" class="row3 col2">
+		<input type="radio" name="sex" id="ipt7" class="row4 col1">
+		<input type="radio" name="sex" id="ipt8" class="row4 col2">
+		<input type="checkbox"  id="ipt9" class="row5 col1">
+		<input type="checkbox" id="ipt10" class="row5 col2">
+		<input type="checkbox" id="ipt11" class="row5 col5">
+		<input type="submit" id="ipt12" class="row6 col2">
+
+		<label for="" id="lb1" class="row1 col3">姓名：</label>
+		<label for="" id="lb2" class="row1 col4">身份证：</label>
+		<label for="" id="lb3" class="row2 col3">年龄：</label>
+		<label for="" id="lb4" class="row2 col4">出生日期：</label>
+		<label for="" id="lb5" class="row3 col3">起床时间：</label>
+		<label for="" id="lb6" class="row3 col4">醒悟时间：</label>
+		<label for="ipt7" id="lb7" class="row4 col3">性别(女)</label>
+		<label for="ipt8" id="lb8" class="row4 col4">(男)</label>
+		<label for="ipt9" id="lb9" class="row5 col3">择偶标准(白/高)</label>
+		<label for="ipt10" id="lb10" class="row5 col4">富</label>
+		<label for="ipt11" id="lb11" class="row5 col11">帅(美)</label>
+		<!-- <label for="" id="lb12" class="row12 col12">保存</label> -->
+	</form>
+</body>
+</html>
